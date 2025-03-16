@@ -16,16 +16,16 @@ if not all([EMAIL_SENDER, EMAIL_PASSWORD, EMAIL_RECEIVER]):
 
 # List of catchy phrases
 catchy_phrases = [
-    "Stay Hydrated, Stay Healthy!",
-    "Water: Your Brain’s Best Friend!",
-    "Drink Water, Keep Going!",
-    "Hydration = Happiness!",
-    "Sip, Sip, Hooray! Drink Water Now!"
+    "Vishnuuuuuuu! Stay Hydrated, Stay Happy!",
+    "Vishnuuuuuuu! Water: Your Brain’s Best Friend!",
+    "Vishnuuuuuuu! Drink Water, Dance Happy!",
+    "Vishnuuuuuuu! Hydration = Happiness!",
+    "Vishnuuuuuuu! Sip, Sip, Hooray! Drink Water Now!"
 ]
 
 # Choose a random phrase
 subject = random.choice(catchy_phrases)
-body = "Hey there!\n\nJust a friendly reminder to drink some water and stay hydrated!\n\nCheers!"
+body = "Vishnuuuuuuuuuuuuuuuu!\n\nJust a reminder to drink a glass of water!\n\nCheers!"
 
 # Email setup
 msg = MIMEMultipart()
