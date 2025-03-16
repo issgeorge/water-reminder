@@ -18,6 +18,11 @@ jobs:
         with:
           python-version: "3.9"
 
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install secure-smtplib  # Added in case your environment doesn't have it
+
       - name: Run Python script to send email
         env:
           EMAIL_SENDER: ${{ secrets.EMAIL_SENDER }}
