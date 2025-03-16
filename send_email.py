@@ -9,6 +9,11 @@ EMAIL_SENDER = os.getenv("EMAIL_SENDER")
 EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
 EMAIL_RECEIVER = os.getenv("EMAIL_RECEIVER")
 
+# Ensure the environment variables are fetched
+if not all([EMAIL_SENDER, EMAIL_PASSWORD, EMAIL_RECEIVER]):
+    print("❌ Missing environment variables. Please check your secrets.")
+    exit(1)
+
 # List of catchy phrases
 catchy_phrases = [
     "Stay Hydrated, Stay Healthy!",
@@ -38,4 +43,4 @@ try:
     server.quit()
     print("Email sent successfully!")
 except Exception as e:
-    print(f"Error: {e}")
+    print(f"❌ Error: {e}")
