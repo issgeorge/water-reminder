@@ -14,7 +14,7 @@ if not all([EMAIL_SENDER, EMAIL_PASSWORD, EMAIL_RECEIVER]):
     print("❌ Missing environment variables. Please check your secrets.")
     exit(1)
 
-# List of catchy phrases with placeholders for emojis
+# List of phrases with placeholders for emojis
 catchy_phrases = [
     "Vishnuuuuuuu! 💧 Stay Hydrated, Stay Happy! {}",
     "Vishnuuuuuuu! 🚰 Water: Your Brain’s Best Friend! {}",
